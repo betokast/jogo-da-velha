@@ -1,0 +1,71 @@
+:root {
+    --cor1: #302b63;
+    --cor-texto: #fff;
+    --cor-botao: rgb(146,157,157);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cor1);
+    color: var(--cor-texto);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#informacoes {
+    min-height: 50px;
+    margin: 0px auto;
+}
+
+#botao {
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: var(--cor-botao);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: var(--cor-texto);
+}
+
+#botao:hover {
+    background-color: var(--cor1);
+}
+
+#tabuleiro {
+    display: grid;
+    width: min-content;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 25px;
+}
+
+.posicao {
+    height: 150px;
+    width: 150px;
+    font-size: 90px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+    background-color: var(--cor1);
+    border: 10px solid #fff;
+}
+
+.posicao-cima{
+    border-top: none;
+}
+
+.posicao-baixo {
+    border-bottom: none;
+}
+
+.posicao-esq {
+    border-left: none;
+}
+
+.posicao-dir {
+    border-right: none;
+}
